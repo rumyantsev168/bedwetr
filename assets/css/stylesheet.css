@@ -9,6 +9,9 @@ html, body {
     background-color: #121212;
     color: #ffffff;
 }
+@media (max-device-width:768px) {
+    html { zoom: 35% !important }
+}
 header {
     display: flex;
     justify-content: space-between;
