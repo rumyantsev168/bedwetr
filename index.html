@@ -11,9 +11,9 @@
 <body>
     <header>
         <img class="icon" src="assets/icon.webp">
-        <b style="font-size: 18px">Made with <3 by Tommy and his bro DaDuck</b>
+        <b style="font-size: 18px" class="animated">Made by Tommy and his bro DaDuck</b>
         <div class="socials">
-            <a href="https://example.com" target="_blank">
+            <a href="https://app.revolt.chat/invite/q5Ke82BV" target="_blank">
                 <img src="assets/revoltchat.svg" height="60px" title="Revolt Chat">
             </a>
         </div>
@@ -21,7 +21,7 @@
     <main>
         <img class="logo" src="assets/logo.webp">
         <p>Welcome to the ultimate Minecraft server experience!</p>
-        <code class="server-address" onclick="select(this)">wss://bedw3tr.bytommy.uk</code>
+        <code id="ip" class="server-address" onclick="select(this)">wss://bedw3tr.bytommy.uk</code>
         <div class="gamemodes">
             <div>Survival</div>
             <div>PvP</div>
@@ -29,9 +29,17 @@
             <div>Natural Disasters</div>
             <div>Pillars of Fortune</div>
         </div>
-        <p>Supports Minecraft & Eaglercraft 1.8 and 1.12!</p>
-        <p>Vote for the server <a href="https://example.com" target="_blank">here</a>!</p>
+        <div style="cursor: pointer;" onclick="location.reload();">
+            <p>Live player count: <span id="player-count">-</span></p>
+            <small>Click here to refresh</small>
+        </div>
+        <div>
+            <small>Supports 1.8 and 1.12!</small><br>
+            <small>Vote for the server <a href="https://servers.eaglercraft.com/servers/b2bd3c2e-fedb-48c2-88ce-e643a9167444" target="_blank">here</a>!</small>
+        </div>
     </main>
     <script src="assets/js/selection.js"></script>
+    <script src="assets/js/textAnimation.js"></script>
+    <script src="assets/js/playerCount.js"></script>
 </body>
 </html>

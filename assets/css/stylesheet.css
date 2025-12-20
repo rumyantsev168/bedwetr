@@ -8,10 +8,9 @@ html, body {
     font-size: 24px;
     background-color: #121212;
     color: #ffffff;
+    cursor: default;
 }
-@media (max-device-width:768px) {
-    html { zoom: 35% !important }
-}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -23,15 +22,19 @@ header {
     z-index: 1000;
     border-bottom: 1px solid #333333;
 }
+
 a {
     color: #ff4d4d;
     text-decoration: none
 }
+
 a:hover {
     cursor: pointer;
     text-decoration: underline
 }
+
 p { margin: 0px }
+
 main {
     display: flex;
     flex-direction: column;
@@ -41,8 +44,11 @@ main {
     text-align: center;
     padding: 50px 0px;
 }
+
 .icon { height: 80px }
+
 .logo { height: 200px }
+
 .socials {
     display: flex;
     align-items: center;
@@ -50,6 +56,7 @@ main {
     color: #ffffff;
     text-decoration: none;
 }
+
 .server-address {
     margin: 0px;
     background-color: #2b2b2b;
@@ -61,18 +68,22 @@ main {
     width: fit-content;
     cursor: pointer;
 }
+
 .gamemodes {
     display: flex;
     align-items: center;
     gap: 25px;
 }
+
 .gamemodes > div {
     padding: 10px 15px;
     width: fit-content;
+    height: fit-content;
     background-color: #ff4d4d;
     border: none;
     border-radius: 10px;
 }
+
 .msg {
     position: absolute;
     bottom: 20px;
