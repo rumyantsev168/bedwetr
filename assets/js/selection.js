@@ -19,12 +19,9 @@ function selectText(node) {
     } else { console.warn("Could not select text in node: Unsupported browser.") };
 };
 function message(msg) {
-    let els = document.getElementsByClassName("msg");
-    for (let i=0; i<els.length; i++) {
-        els[i].remove();
-    }
+    document.getElementByid("msg").remove();
     let el = document.createElement("div");
-    el.className = "msg";
+    el.id = "msg";
     el.innerText = msg;
     el.onclick = () => el.remove();
     document.body.appendChild(el);

@@ -6,23 +6,23 @@
     <meta name="description" content="BedWetr - a Minecraft server">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <link rel="icon" href="assets/icon.webp">
-    <title>BedWetr</title>
+    <title>BedWetr! By Tommy</title>
 </head>
 <body>
     <header>
-        <img class="icon" src="assets/icon.webp">
+        <img id="icon" src="assets/icon.webp">
         <b style="font-size: 18px" class="animated">Made by Tommy and his bro DaDuck</b>
-        <div class="socials">
+        <div id="socials">
             <a href="https://app.revolt.chat/invite/q5Ke82BV" target="_blank">
                 <img src="assets/revoltchat.svg" height="60px" title="Revolt Chat">
             </a>
         </div>
     </header>
     <main>
-        <img class="logo" src="assets/logo.webp">
+        <img id="logo" src="assets/logo.webp">
         <p>Welcome to the ultimate Minecraft server experience!</p>
-        <code id="ip" class="server-address" onclick="select(this)">wss://bedw3tr.bytommy.uk</code>
-        <div class="gamemodes">
+        <code id="ip" onclick="select(this)">wss://bedw3tr.bytommy.uk</code>
+        <div id="gamemodes">
             <div>Survival</div>
             <div>PvP</div>
             <div>Speed-bridging</div>
@@ -33,13 +33,34 @@
             <p>Live player count: <span id="player-count">-</span></p>
             <small>Click here to refresh</small>
         </div>
-        <div>
-            <small>Supports 1.8 and 1.12!</small><br>
-            <small>Vote for the server <a href="https://servers.eaglercraft.com/servers/b2bd3c2e-fedb-48c2-88ce-e643a9167444" target="_blank">here</a>!</small>
+        <small>Vote for the server <a href="https://servers.eaglercraft.com/servers/b2bd3c2e-fedb-48c2-88ce-e643a9167444" target="_blank">here</a>!</small>
+        <p>&downarrow; Mace and Wind Charge crafting recipes &downarrow;</p>
+        <div id="recipes">
+            <item-slot-grid>
+                <item-slot item="https://minecraft.wiki/images/Invicon_Block_of_Gold.png" tooltip="Block of Gold"></item-slot>
+                <item-slot item="https://minecraft.wiki/images/Invicon_Block_of_Coal.png" tooltip="Block of Coal"></item-slot>
+                <item-slot item="https://minecraft.wiki/images/Invicon_Block_of_Gold.png" tooltip="Block of Gold"></item-slot>
+                <item-slot item="https://minecraft.wiki/images/Invicon_Block_of_Gold.png" tooltip="Block of Gold"></item-slot>
+                <item-slot item="https://minecraft.wiki/images/Invicon_Block_of_Coal.png" tooltip="Block of Coal"></item-slot>
+                <item-slot item="https://minecraft.wiki/images/Invicon_Block_of_Gold.png" tooltip="Block of Gold"></item-slot>
+                <item-slot></item-slot>
+                <item-slot item="https://minecraft.wiki/images/Invicon_Blaze_Rod.png" tooltip="Blaze Rod"></item-slot>
+                <item-slot></item-slot>
+                <item-slot result large item="https://minecraft.wiki/images/Invicon_Stone_Hoe.png" tooltip="&cMace"></item-slot>
+            </item-slot-grid>
+            <item-slot-grid continue>
+                <item-slot></item-slot>
+                <item-slot></item-slot>
+                <item-slot></item-slot>
+                <item-slot></item-slot>
+                <item-slot item="https://minecraft.wiki/images/Invicon_Coal.png" tooltip="Coal"></item-slot>
+                <item-slot result large item="https://minecraft.wiki/images/Invicon_Snowball.png" tooltip="&cWind Charge" count="4"></item-slot>
+            </item-slot-grid>
         </div>
     </main>
     <script src="assets/js/selection.js"></script>
     <script src="assets/js/textAnimation.js"></script>
     <script src="assets/js/playerCount.js"></script>
+    <script src="https://rumyantsev168.github.io/static/js/ItemSlot.js"></script>
 </body>
 </html>
